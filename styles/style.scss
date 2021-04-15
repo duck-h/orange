@@ -62,73 +62,71 @@ main {
       color: rgb(255, 255, 255);
       margin-bottom: 5rem;
       background-color: rgba(197, 108, 7, 0.368);
-      margin-top: -3%;
       border: 0.3rem solid;
 
-}
     }
+  }
 
-    h3 {
-      
+  h3 {
 
-     
-      width: 70%;
+
+
+    width: 70%;
+    font-size: 1.5rem;
+    color: #fff;
+
+    span.title {
       font-size: 1.5rem;
-      color: #fff;
+      color: gold;
+      // background-color: gold;
 
-      span.title {
-        font-size: 1.5rem;
-        color: gold;
-        // background-color: gold;
-        
-      }
-
-      span.usd {
-        background-color: gold;
-        color: #000;
-        font-weight: 600;
-        font-size: 3rem;
-        padding: 1.5rem 0.7rem;
-        border-radius: 100%;
-
-      }
-
-      span.sale {
-        color: red;
-      }
     }
 
-    button.start {
-      color: #fff;
-      background-color: rgb(29, 137, 67);
-      padding: 0.8rem 1.8rem;
-      font-size: 1.5rem;
-      border: none;
-      border-radius: 1.5rem;
-      cursor: pointer;
-      margin-top: 2rem;
-
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
-    }
-
-    button.start:hover {
-      a {
-        color: #000;
-      }
-
+    span.usd {
       background-color: gold;
+      color: #000;
+      font-weight: 600;
+      font-size: 3rem;
+      padding: 1.5rem 0.7rem;
+      border-radius: 100%;
+
     }
 
-    div.filter {
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      min-height: 100vh;
-      position: absolute;
-      top: 0;
-      z-index: -1;
+    span.sale {
+      color: red;
     }
+  }
+
+  button.start {
+    color: #fff;
+    background-color: rgb(29, 137, 67);
+    padding: 0.8rem 1.8rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  button.start:hover {
+    a {
+      color: #000;
+    }
+
+    background-color: gold;
+  }
+
+  div.filter {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
   }
 }
