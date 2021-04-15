@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+      #text {
+        font-size: 1rem;
+        background-color: rgb(227, 227, 227);
+        border: 3px solid black;
+        width: 25%;
+        padding: 1rem;
+      }
+      .copy-btn {
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: darkorange;
+        border: none;
+        border-radius: 5rem;
+        padding: 0.5rem;
+        margin-top: 1rem;
+      }
+    </style>
+    <script>
+      function copyText() {
+        var node = document.getElementById('text');
+        if (document.body.createTextRange) {
+          var range = document.body.createTextRange();
+          range.moveToElementText(node);
+          range.select();
+          document.execCommand('copy');
+        } else if (window.getSelection) {
+          var selection = window.getSelection();
+          var range = document.createRange();
+          range.selectNodeContents(node);
+          selection.removeAllRanges();
+          selection.addRange(range);
+          document.execCommand('copy');
+        } else {
+          alert('無法複製內容、瀏覽器不支援');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>來信格式</h2>
+    <!-- 文字區塊 -->
+    <div id="text">
+      商品網址: <br />
+      顏色:<br />
+      尺寸：<br />
+      <br />
+      商品網址: <br />
+      顏色:<br />
+      尺寸：<br />
+      <br />
+      商品網址: <br />
+      顏色:<br />
+      尺寸：<br />
+      <br />
+
+      1.姓名：<br />
+      2.電話：<br />
+      3.身分證字號:<br />
+      4.郵遞區號+地址:
+    </div>
+
+    <!-- 複製文字 -->
+    <button class="copy-btn" onclick="copyText()">按我複製</button>
+  </body>
+</html>

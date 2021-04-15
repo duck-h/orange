@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif TC',
+    serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+// header {
+//   // background-color: rgb(253, 202, 51);
+//   flex-wrap: wrap;
+
+//   div.logo {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0.5rem;
+
+//     img {
+//       width: 6vw;
+//       height: 6vw;
+//     }
+
+//     h1 {
+//       font-size: 2.5rem;
+//       color: #333;
+//     }
+//   }
+// }
+
+main {
+  section.backImage {
+
+
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../Pictures/IMG_7063.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    span.logo {
+
+      font-size: 1.7rem;
+      padding: 1rem 1.5rem;
+      color: rgb(255, 255, 255);
+      margin-bottom: 5rem;
+      background-color: rgba(197, 108, 7, 0.368);
+      margin-top: -5%;
+      border: 0.3rem solid;
+
+    }
+
+    h3 {
+      width: 70%;
+      font-size: 1.5rem;
+      color: #fff;
+
+      span.title {
+        font-size: 1.5rem;
+        color: gold;
+        // background-color: gold;
+        padding: 0rem 0rem;
+      }
+
+      span.usd {
+        background-color: gold;
+        color: #000;
+        font-weight: 600;
+        font-size: 3rem;
+        padding: 1.5rem 0.7rem;
+        border-radius: 100%;
+        
+      }
+      span.sale{
+        color: red;
+      }
+    }
+
+    button.start {
+      color: #fff;
+      background-color: rgb(29, 137, 67);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      margin-top: 2rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+    button.start:hover {
+      a {
+        color: #000;
+      }
+
+      background-color: gold;
+    }
+
+    div.filter {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}
